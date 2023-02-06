@@ -1,0 +1,2 @@
+# NVimWaylandClipboard
+Copy for neovim.
