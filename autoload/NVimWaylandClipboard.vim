@@ -1,4 +1,4 @@
-function! WaylandClipboard#Copy()
+function! NVimWaylandClipboard#Copy()
 "	let selected = expand('<C-r>"')
 	let selected = getreg('"')
     let selected = substitute(selected, "!", "\!", "g")

@@ -1,7 +1,6 @@
-
-if exists("g:loaded_WaylandClipboard")
+if exists("g:loaded_NVimWaylandClipboard")
 	finish
 endif
-let g:loaded_WaylandClipboard = 1
+let g:loaded_NVimWaylandClipboard = 1
 
-command! -nargs=0 WlCopy call WaylandClipboard#Copy()
+command! -nargs=0 WlCopy call NVimWaylandClipboard#Copy()
