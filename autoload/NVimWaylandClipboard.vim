@@ -1,0 +1,10 @@
+function! WaylandClipboard#Copy()
+"	let selected = expand('<C-r>"')
+	let selected = getreg('"')
+    let selected = substitute(selected, "!", "\!", "g")
+    let selected = substitute(selected, '"', "\"", "g")
+    let selected = substitute(selected, "'", "\"", "g")
+    let selected = substitute(selected, "`", "\`", "g")
+    let systemResult1 = system("wl-copy '" . selected . "'")
+    let systemResult2 = system("wl-copy -p'" . selected . "'")
+endfunction
