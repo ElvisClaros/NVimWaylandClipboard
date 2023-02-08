@@ -7,6 +7,12 @@ Add the following line to your `init.vim`:
 Plug 'elvisclaros/NVimWaylandClipboard'
 ``` 
 Then run `:PlugInstall` in Neovim.
+#Requirements
+This plugin requires the `wl-clipboard` program to be installed. You can install it using your package manager.
+Example for Debian distros:
+```bash
+sudo apt install wl-clipboard
+```
 
 #Usage
 This plugin provides commands:
